@@ -39,17 +39,11 @@ class Crops extends Component {
   }
 
   sortBy(evt) {
-    let intSort = () => {
-      crops = this.state.crops.sort((a, b) => parseInt(a[evt.target.id]) - parseInt(b[evt.target.id]))
-    }
-    let intSortReverse = () => {
-      crops = this.state.crops.sort((a, b) => parseInt(b[evt.target.id]) - parseInt(a[evt.target.id]))
-    }
     let crops = [];
     if (evt.target.classList.contains('active')) {
-      intSortReverse();
+      crops = this.state.crops.sort((a, b) => parseInt(b[evt.target.id]) - parseInt(a[evt.target.id]))
     } else {
-      intSort();
+      crops = this.state.crops.sort((a, b) => parseInt(a[evt.target.id]) - parseInt(b[evt.target.id]))
     }
     let active = document.querySelector('.active');
     if (active) active.classList.remove('active');
@@ -89,7 +83,7 @@ class Crops extends Component {
                   <tr>
                     <td>{c.crop}</td>
                     <td>{c.growTime}</td>
-                    <td>{c.regrows ? `${c.regrowTime} days` : "nope"}</td>
+                    <td>{c.regrows ? `every ${c.regrowTime} days` : "---"}</td>
                     <td>{c.maxHarvests}</td>
                     <td>{c.seedCost}</td>
                     <td>{c.sellPrice}</td>

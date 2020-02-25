@@ -39,12 +39,25 @@ class Crops extends Component {
   }
 
   sortBy(evt) {
+    let intSort = () => {
+      crops = this.state.crops.sort((a, b) => parseInt(a[evt.target.id]) - parseInt(b[evt.target.id]))
+    }
+    let intSortReverse = () => {
+      crops = this.state.crops.sort((a, b) => parseInt(b[evt.target.id]) - parseInt(a[evt.target.id]))
+    }
+    let crops = [];
+    if (evt.target.classList.contains('active')) {
+      intSortReverse();
+    } else {
+      intSort();
+    }
     let active = document.querySelector('.active');
     if (active) active.classList.remove('active');
+
+
     let field = document.querySelector(`#${evt.target.id}`)
     field.classList.add('active')
-    let crops = this.state.crops.sort((a, b) => parseInt(a[evt.target.id]) - parseInt(b[evt.target.id]))
-    console.log(crops)
+
     this.setState({
       crops: crops
     })

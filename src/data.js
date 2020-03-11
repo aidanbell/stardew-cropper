@@ -8,14 +8,8 @@ let data = [{
     "regrowTime": 8,
     "yields": 1,
     "maxHarvests": 4,
-    "extraDays": 7,
     "sellPrice": 550,
-    "seedCost": 0,
-    "grossIncome": 2200,
-    "totalIncome": 2200,
-    "preservesJar": 1150,
-    "artisan": 2310,
-    "keg": 1650
+    "seedCost": 0
   },
   {
     "crop": "Corn",
@@ -27,14 +21,8 @@ let data = [{
     "regrowTime": 4,
     "yields": 1,
     "maxHarvests": 11,
-    "extraDays": 1,
     "sellPrice": 50,
-    "seedCost": 150,
-    "grossIncome": 550,
-    "totalIncome": 400,
-    "preservesJar": 150,
-    "artisan": 156.8,
-    "keg": 112
+    "seedCost": 150
   },
   {
     "crop": "Coffee Beans",
@@ -46,14 +34,8 @@ let data = [{
     "regrowTime": 2,
     "yields": 4,
     "maxHarvests": 23,
-    "extraDays": 1,
     "sellPrice": 15,
-    "seedCost": 0,
-    "grossIncome": 1380,
-    "totalIncome": 1380,
-    "preservesJar": 0,
-    "keg": 150,
-    "artisan": 210
+    "seedCost": 0
   },
   {
     "crop": "Rice",
@@ -62,16 +44,9 @@ let data = [{
     "growTime": 6,
     "yields": 1.1,
     "maxHarvests": 4,
-    "extraDays": 3,
     "sellPrice": 30,
     "seedCost": 0,
-    "grossIncome": 132,
-    "totalIncome": 132,
-    "preservesJar": 110,
-    "artisan": 93.8,
-    "keg": 67,
-    "maxProfit": "Jar",
-    "undefined": 616
+    "best": "Jar"
   },
   {
     "crop": "Parsnip",
@@ -82,16 +57,9 @@ let data = [{
     "growTime": 4,
     "yields": 1,
     "maxHarvests": 6,
-    "extraDays": 3,
     "sellPrice": 35,
     "seedCost": 20,
-    "grossIncome": 210,
-    "totalIncome": 90,
-    "preservesJar": 120,
-    "artisan": 109.2,
-    "keg": 78,
-    "maxProfit": "Jar",
-    "undefined": 1008
+    "best": "Jar"
   },
   {
     "crop": "Garlic",
@@ -102,16 +70,9 @@ let data = [{
     "growTime": 4,
     "yields": 1,
     "maxHarvests": 6,
-    "extraDays": 3,
     "sellPrice": 60,
     "seedCost": 40,
-    "grossIncome": 360,
-    "totalIncome": 120,
-    "preservesJar": 170,
-    "artisan": 189,
-    "keg": 135,
-    "maxProfit": "Jar",
-    "undefined": 1428
+    "best": "Jar"
   },
   {
     "crop": "Potato",
@@ -122,16 +83,9 @@ let data = [{
     "growTime": 6,
     "yields": 1.2,
     "maxHarvests": 4,
-    "extraDays": 3,
     "sellPrice": 80,
     "seedCost": 50,
-    "grossIncome": 384,
-    "totalIncome": 184,
-    "preservesJar": 210,
-    "artisan": 252,
-    "keg": 180,
-    "maxProfit": "Jar",
-    "undefined": 1176
+    "best": "Jar"
   },
   {
     "crop": "Tulip",
@@ -142,12 +96,8 @@ let data = [{
     "growTime": 6,
     "yields": 1,
     "maxHarvests": 4,
-    "extraDays": 3,
     "sellPrice": 30,
-    "seedCost": 20,
-    "grossIncome": 120,
-    "totalIncome": 40,
-    "undefined": 0
+    "seedCost": 20
   },
   {
     "crop": "Kale",
@@ -158,16 +108,9 @@ let data = [{
     "growTime": 6,
     "yields": 1,
     "maxHarvests": 4,
-    "extraDays": 3,
     "sellPrice": 110,
     "seedCost": 70,
-    "grossIncome": 440,
-    "totalIncome": 160,
-    "preservesJar": 270,
-    "artisan": 345.8,
-    "keg": 247,
-    "maxProfit": "Jar",
-    "undefined": 1512
+    "best": "Jar"
   },
   {
     "crop": "Blue Jazz",
@@ -178,12 +121,8 @@ let data = [{
     "growTime": 7,
     "yields": 1,
     "maxHarvests": 3,
-    "extraDays": 6,
     "sellPrice": 50,
-    "seedCost": 30,
-    "grossIncome": 150,
-    "totalIncome": 60,
-    "undefined": 0
+    "seedCost": 30
   },
   {
     "crop": "Strawberry",
@@ -195,16 +134,9 @@ let data = [{
     "regrowTime": 4,
     "yields": 1,
     "maxHarvests": 5,
-    "extraDays": 3,
     "sellPrice": 120,
     "seedCost": 100,
-    "grossIncome": 600,
-    "totalIncome": 500,
-    "preservesJar": 290,
-    "artisan": 504,
-    "keg": 360,
-    "maxProfit": "Keg",
-    "undefined": 2520
+    "best": "Keg"
   },
   {
     "crop": "Green Bean",
@@ -216,36 +148,22 @@ let data = [{
     "regrowTime": 3,
     "yields": 1,
     "maxHarvests": 6,
-    "extraDays": 2,
     "sellPrice": 40,
     "seedCost": 60,
-    "grossIncome": 240,
-    "totalIncome": 180,
-    "preservesJar": 130,
-    "artisan": 126,
-    "keg": 90,
-    "maxProfit": "Jar",
-    "undefined": 1092
+    "best": "Jar"
   },
   {
     "crop": "Cauliflower",
     "season": "Spring",
     "type": "Vegetable",
     "regrows": false,
-    "walkable": "Usually",
+    "walkable": true,
     "growTime": 12,
     "yields": 1,
     "maxHarvests": 2,
-    "extraDays": 3,
     "sellPrice": 175,
     "seedCost": 80,
-    "grossIncome": 350,
-    "totalIncome": 190,
-    "preservesJar": 400,
-    "artisan": 550.2,
-    "keg": 393,
-    "maxProfit": "Jar",
-    "undefined": 1120
+    "best": "Jar"
   },
   {
     "crop": "Rhubarb",
@@ -256,16 +174,9 @@ let data = [{
     "growTime": 13,
     "yields": 1,
     "maxHarvests": 2,
-    "extraDays": 1,
     "sellPrice": 220,
     "seedCost": 100,
-    "grossIncome": 440,
-    "totalIncome": 240,
-    "preservesJar": 490,
-    "artisan": 924,
-    "keg": 660,
-    "maxProfit": "Keg",
-    "undefined": 1848
+    "best": "Keg"
   },
   {
     "crop": "Wheat",
@@ -276,16 +187,9 @@ let data = [{
     "growTime": 4,
     "yields": 1,
     "maxHarvests": 6,
-    "extraDays": 3,
     "sellPrice": 25,
     "seedCost": 10,
-    "grossIncome": 150,
-    "totalIncome": 90,
-    "preservesJar": 100,
-    "artisan": 280,
-    "keg": 200,
-    "maxProfit": "Keg",
-    "undefined": 1680
+    "best": "Keg"
   },
   {
     "crop": "Hot Pepper",
@@ -297,16 +201,9 @@ let data = [{
     "regrowTime": 3,
     "yields": 1,
     "maxHarvests": 8,
-    "extraDays": 1,
     "sellPrice": 40,
     "seedCost": 40,
-    "grossIncome": 320,
-    "totalIncome": 280,
-    "preservesJar": 130,
-    "artisan": 168,
-    "keg": 120,
-    "maxProfit": "Jar",
-    "undefined": 1456
+    "best": "Jar"
   },
   {
     "crop": "Radish",
@@ -317,16 +214,9 @@ let data = [{
     "growTime": 6,
     "yields": 1,
     "maxHarvests": 4,
-    "extraDays": 3,
     "sellPrice": 90,
     "seedCost": 40,
-    "grossIncome": 360,
-    "totalIncome": 200,
-    "preservesJar": 230,
-    "artisan": 282.8,
-    "keg": 202,
-    "maxProfit": "Jar",
-    "undefined": 1288
+    "best": "Jar"
   },
   {
     "crop": "Poppy",
@@ -337,12 +227,8 @@ let data = [{
     "growTime": 7,
     "yields": 1,
     "maxHarvests": 3,
-    "extraDays": 6,
     "sellPrice": 140,
-    "seedCost": 100,
-    "grossIncome": 420,
-    "totalIncome": 120,
-    "undefined": 0
+    "seedCost": 100
   },
   {
     "crop": "Summer Spangle",
@@ -353,12 +239,8 @@ let data = [{
     "growTime": 8,
     "yields": 1,
     "maxHarvests": 3,
-    "extraDays": 3,
     "sellPrice": 90,
-    "seedCost": 50,
-    "grossIncome": 270,
-    "totalIncome": 120,
-    "undefined": 0
+    "seedCost": 50
   },
   {
     "crop": "Red Cabbage",
@@ -369,16 +251,9 @@ let data = [{
     "growTime": 9,
     "yields": 1,
     "maxHarvests": 3,
-    "extraDays": 0,
     "sellPrice": 260,
     "seedCost": 100,
-    "grossIncome": 780,
-    "totalIncome": 480,
-    "preservesJar": 570,
-    "artisan": 819,
-    "keg": 585,
-    "maxProfit": "Keg",
-    "undefined": 2457
+    "best": "Keg"
   },
   {
     "crop": "Hops",
@@ -390,16 +265,9 @@ let data = [{
     "regrowTime": 1,
     "yields": 1,
     "maxHarvests": 17,
-    "extraDays": 0,
     "sellPrice": 25,
     "seedCost": 60,
-    "grossIncome": 425,
-    "totalIncome": 365,
-    "preservesJar": 100,
-    "artisan": 420,
-    "keg": 300,
-    "maxProfit": "Keg",
-    "undefined": 7140
+    "best": "Keg"
   },
   {
     "crop": "Tomato",
@@ -411,36 +279,22 @@ let data = [{
     "regrowTime": 4,
     "yields": 1,
     "maxHarvests": 5,
-    "extraDays": 0,
     "sellPrice": 60,
     "seedCost": 50,
-    "grossIncome": 300,
-    "totalIncome": 250,
-    "preservesJar": 170,
-    "artisan": 189,
-    "keg": 135,
-    "maxProfit": "Jar",
-    "undefined": 1190
+    "best": "Jar"
   },
   {
     "crop": "Melon",
     "season": "Summer",
     "type": "Fruit",
     "regrows": false,
-    "walkable": "Usually",
+    "walkable": true,
     "growTime": 12,
     "yields": 1,
     "maxHarvests": 2,
-    "extraDays": 3,
     "sellPrice": 250,
     "seedCost": 80,
-    "grossIncome": 500,
-    "totalIncome": 340,
-    "preservesJar": 550,
-    "artisan": 1050,
-    "keg": 750,
-    "maxProfit": "Keg",
-    "undefined": 2100
+    "best": "Keg"
   },
   {
     "crop": "Blueberry",
@@ -452,16 +306,9 @@ let data = [{
     "regrowTime": 4,
     "yields": 3,
     "maxHarvests": 4,
-    "extraDays": 2,
     "sellPrice": 50,
     "seedCost": 80,
-    "grossIncome": 600,
-    "totalIncome": 520,
-    "preservesJar": 150,
-    "artisan": 210,
-    "keg": 150,
-    "maxProfit": "Keg",
-    "undefined": 840
+    "best": "Keg"
   },
   {
     "crop": "Starfruit",
@@ -472,16 +319,9 @@ let data = [{
     "growTime": 13,
     "yields": 1,
     "maxHarvests": 2,
-    "extraDays": 1,
     "sellPrice": 750,
     "seedCost": 400,
-    "grossIncome": 1500,
-    "totalIncome": 700,
-    "preservesJar": 1550,
-    "artisan": 3150,
-    "keg": 2250,
-    "maxProfit": "Keg",
-    "undefined": 6300
+    "best": "Keg"
   },
   {
     "crop": "Bok Choy",
@@ -492,16 +332,9 @@ let data = [{
     "growTime": 4,
     "yields": 1,
     "maxHarvests": 6,
-    "extraDays": 3,
     "sellPrice": 80,
     "seedCost": 50,
-    "grossIncome": 480,
-    "totalIncome": 180,
-    "preservesJar": 210,
-    "artisan": 252,
-    "keg": 180,
-    "maxProfit": "Jar",
-    "undefined": 1764
+    "best": "Jar"
   },
   {
     "crop": "Eggplant",
@@ -513,16 +346,9 @@ let data = [{
     "regrowTime": 5,
     "yields": 1,
     "maxHarvests": 5,
-    "extraDays": 2,
     "sellPrice": 60,
     "seedCost": 20,
-    "grossIncome": 300,
-    "totalIncome": 280,
-    "preservesJar": 170,
-    "artisan": 189,
-    "keg": 135,
-    "maxProfit": "Jar",
-    "undefined": 1190
+    "best": "Jar"
   },
   {
     "crop": "Beet",
@@ -533,16 +359,9 @@ let data = [{
     "growTime": 6,
     "yields": 1,
     "maxHarvests": 4,
-    "extraDays": 3,
     "sellPrice": 100,
     "seedCost": 20,
-    "grossIncome": 400,
-    "totalIncome": 320,
-    "preservesJar": 250,
-    "artisan": 315,
-    "keg": 225,
-    "maxProfit": "Jar",
-    "undefined": 1400
+    "best": "Jar"
   },
   {
     "crop": "Cranberry",
@@ -554,16 +373,9 @@ let data = [{
     "regrowTime": 5,
     "yields": 2,
     "maxHarvests": 5,
-    "extraDays": 0,
     "sellPrice": 75,
     "seedCost": 240,
-    "grossIncome": 750,
-    "totalIncome": 510,
-    "preservesJar": 200,
-    "artisan": 315,
-    "keg": 225,
-    "maxProfit": "Keg",
-    "undefined": 1575
+    "best": "Keg"
   },
   {
     "crop": "Amaranth",
@@ -574,16 +386,9 @@ let data = [{
     "growTime": 7,
     "yields": 1,
     "maxHarvests": 3,
-    "extraDays": 6,
     "sellPrice": 150,
     "seedCost": 70,
-    "grossIncome": 450,
-    "totalIncome": 240,
-    "preservesJar": 350,
-    "artisan": 471.8,
-    "keg": 337,
-    "maxProfit": "Jar",
-    "undefined": 1470
+    "best": "Jar"
   },
   {
     "crop": "Sunflower",
@@ -594,12 +399,8 @@ let data = [{
     "growTime": 8,
     "yields": 1,
     "maxHarvests": 3,
-    "extraDays": 3,
     "sellPrice": 80,
-    "seedCost": 200,
-    "grossIncome": 240,
-    "totalIncome": -360,
-    "undefined": 0
+    "seedCost": 200
   },
   {
     "crop": "Artichoke",
@@ -610,16 +411,9 @@ let data = [{
     "growTime": 8,
     "yields": 1,
     "maxHarvests": 3,
-    "extraDays": 3,
     "sellPrice": 160,
     "seedCost": 30,
-    "grossIncome": 480,
-    "totalIncome": 390,
-    "preservesJar": 370,
-    "artisan": 504,
-    "keg": 360,
-    "maxProfit": "Jar",
-    "undefined": 1554
+    "best": "Jar"
   },
   {
     "crop": "Yam",
@@ -630,16 +424,9 @@ let data = [{
     "growTime": 10,
     "yields": 1,
     "maxHarvests": 2,
-    "extraDays": 7,
     "sellPrice": 160,
     "seedCost": 60,
-    "grossIncome": 320,
-    "totalIncome": 200,
-    "preservesJar": 370,
-    "artisan": 504,
-    "keg": 360,
-    "maxProfit": "Jar",
-    "undefined": 1036
+    "best": "Jar"
   },
   {
     "crop": "Grape",
@@ -651,16 +438,9 @@ let data = [{
     "regrowTime": 3,
     "yields": 1,
     "maxHarvests": 6,
-    "extraDays": 2,
     "sellPrice": 80,
     "seedCost": 60,
-    "grossIncome": 480,
-    "totalIncome": 420,
-    "preservesJar": 210,
-    "artisan": 336,
-    "keg": 240,
-    "maxProfit": "Keg",
-    "undefined": 2016
+    "best": "Keg"
   },
   {
     "crop": "Fairy Rose",
@@ -671,33 +451,22 @@ let data = [{
     "growTime": 12,
     "yields": 1,
     "maxHarvests": 2,
-    "extraDays": 3,
     "sellPrice": 290,
     "seedCost": 200,
-    "grossIncome": 580,
-    "totalIncome": 180,
-    "maxProfit": "Keg",
-    "undefined": 0
+    "best": "Keg"
   },
   {
     "crop": "Pumpkin",
     "season": "Fall",
     "type": "Vegetable",
     "regrows": false,
-    "walkable": "Usually",
+    "walkable": true,
     "growTime": 13,
     "yields": 1,
     "maxHarvests": 2,
-    "extraDays": 1,
     "sellPrice": 320,
     "seedCost": 100,
-    "grossIncome": 640,
-    "totalIncome": 440,
-    "preservesJar": 690,
-    "artisan": 1008,
-    "keg": 720,
-    "maxProfit": "Keg",
-    "undefined": 2016
+    "best": "Keg"
   },
   {
     "crop": "Sweet Gem Berry",
@@ -707,13 +476,9 @@ let data = [{
     "growTime": 24,
     "yields": 1,
     "maxHarvests": 1,
-    "extraDays": 3,
     "sellPrice": 3000,
     "seedCost": 1000,
-    "grossIncome": 3000,
-    "totalIncome": 2000,
-    "maxProfit": "Keg",
-    "undefined": 0
+    "best": "Keg"
   }
 ]
 

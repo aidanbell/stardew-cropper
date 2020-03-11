@@ -11,14 +11,43 @@ class Crops extends Component {
     super();
     this.state = {
       season: 'spring',
+      tiller: false,
+      artisan: false
 
     }
     this.handleChange = this.handleChange.bind(this);
     this.sortBy = this.sortBy.bind(this);
+    this.handleRadio = this.handleRadio.bind(this);
   }
 
   componentDidMount() {
     console.log(data);
+  }
+
+  handleRadio(evt) {
+    console.log(evt.target)
+    if (evt.target.value === 'tiller' || evt.target.id === 'tiller') {
+      if(this.state.tiller) {
+        this.setState({
+          tiller: false
+        })
+      } else {
+        this.setState({
+          tiller: true
+        })
+      }
+    }
+    if (evt.target.value === 'artisan' || evt.target.id === 'artisan') {
+      if(this.state.artisan) {
+        this.setState({
+          artisan: false
+        })
+      } else {
+        this.setState({
+          artisan: true
+        })
+      }
+    }
   }
 
   handleChange(evt) {
@@ -41,9 +70,9 @@ class Crops extends Component {
   sortBy(evt) {
     let crops = [];
     if (evt.target.classList.contains('active')) {
-      crops = this.state.crops.sort((a, b) => parseInt(b[evt.target.id]) - parseInt(a[evt.target.id]))
+      crops = this.state.crops.sort((a, b) => parseFloat(b[evt.target.id]) - parseFloat(a[evt.target.id]))
     } else {
-      crops = this.state.crops.sort((a, b) => parseInt(a[evt.target.id]) - parseInt(b[evt.target.id]))
+      crops = this.state.crops.sort((a, b) => parseFloat(a[evt.target.id]) - parseFloat(b[evt.target.id]))
     }
     let active = document.querySelector('.active');
     if (active) active.classList.remove('active');
@@ -59,12 +88,20 @@ class Crops extends Component {
 
   render() {
     return(
-      <div>
+      <div className="crop-table">
         <select id="season" onChange={this.handleChange} value={this.state.season}>
           <option value="spring">spring</option>
           <option value="summer">summer</option>
           <option value="fall">fall</option>
         </select>
+        <div id="tiller" onClick={this.handleRadio}>
+          <input type="radio" value="tiller" checked={this.state.tiller}></input>
+          <label for="tiller">Tiller Profession</label>
+        </div>
+        <div id="artisan" onClick={this.handleRadio}>
+          <input type="radio" value="artisan" checked={this.state.artisan}></input>
+          <label for="artisan">Artisan Profession</label>
+        </div>
         {this.state.crops ?
           <table>
             <thead>
@@ -73,6 +110,7 @@ class Crops extends Component {
                 <th onClick={this.sortBy} id="growTime">Grow Time</th>
                 <th onClick={this.sortBy} id="regrows">Regrows?</th>
                 <th onClick={this.sortBy} id="maxHarvests">Max Harvests</th>
+                <th onClick={this.sortBy} id="yields">Yield</th>
                 <th onClick={this.sortBy} id="seedCost">Seed Cost</th>
                 <th onClick={this.sortBy} id="sellPrice">Base Sell</th>
               </tr>
@@ -85,6 +123,7 @@ class Crops extends Component {
                     <td>{c.growTime}</td>
                     <td>{c.regrows ? `every ${c.regrowTime} days` : "---"}</td>
                     <td>{c.maxHarvests}</td>
+                    <td>{c.yields}</td>
                     <td>{c.seedCost}</td>
                     <td>{c.sellPrice}</td>
                   </tr>

@@ -14,51 +14,51 @@ class CommTrack extends Component {
 
   render() {
     return(
-      <div class="container" id="comm-track">
-        <div class="room" id="craft">
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
+      <div className="container" id="comm-track">
+        <div className="room" id="craft">
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
         </div>
-        <div class="room" id="pantry">
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
+        <div className="room" id="pantry">
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
         </div>
-        <div class="room" id="fish">
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
+        <div className="room" id="fish">
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
         </div>
-        <div class="room" id="boiler">
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
+        <div className="room" id="boiler">
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
         </div>
-        <div class="room" id="bulletin">
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
+        <div className="room" id="bulletin">
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
         </div>
-        <div class="room" id="vault">
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
-          <div class="bundle" id=""></div>
+        <div className="room" id="vault">
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
+          <div className="bundle" id=""></div>
         </div>
-        <div class="room" id="abandoned">
-          <div class="bundle" id=""></div>
+        <div className="room" id="abandoned">
+          <div className="bundle" id=""></div>
         </div>
       </div>
     )

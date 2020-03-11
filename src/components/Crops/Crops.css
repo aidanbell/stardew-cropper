@@ -1,3 +1,7 @@
 .active {
   border: 2px solid grey;
 }
+
+.crop-table {
+  right: 0;
+}

@@ -21,7 +21,7 @@ class Crops extends Component {
   }
 
   componentDidMount() {
-    console.log(data);
+    this.makeCrops();
   }
 
   handleRadio(evt) {
@@ -51,18 +51,24 @@ class Crops extends Component {
   }
 
   handleChange(evt) {
+    this.makeCrops()
+    this.setState({
+      season: evt.target.value,
+    })
+  }
+
+  makeCrops() {
     let crops = [];
-    if (evt.target.value === 'spring') {
+    if (this.state.season === 'spring') {
       crops = data.slice(2, 14)
     }
-    if (evt.target.value === 'summer') {
+    if (this.state.season === 'summer') {
       crops = data.slice(14, 25)
     }
-    if (evt.target.value === 'fall') {
+    if (this.state.season === 'fall') {
       crops = data.slice(25)
     }
     this.setState({
-      season: evt.target.value,
       crops: crops
     })
   }
@@ -87,6 +93,31 @@ class Crops extends Component {
   }
 
   render() {
+    let calculateSell = (c) => {
+      let sell = 0;
+      if (c.best === "Wine") {
+        sell = c.sellPrice * 3;
+      }
+      if (c.best === "Pickles") {
+        sell = c.sellPrice * 2 + 50;
+      }
+      if (c.best === "Juice") {
+        sell = c.sellPrice * 2.25;
+      }
+      if (c.best === "Coffee") {
+        sell = 150;
+      }
+      if (c.best === "Pale_Ale") {
+        sell = 300;
+      }
+      if (c.best === "Beer") {
+        sell = 200;
+      }
+      if (this.state.artisan) {
+        sell += sell * 0.4;
+      }
+      return sell;
+    }
     return(
       <div className="crop-table">
         <select id="season" onChange={this.handleChange} value={this.state.season}>
@@ -95,12 +126,10 @@ class Crops extends Component {
           <option value="fall">fall</option>
         </select>
         <div id="tiller" onClick={this.handleRadio}>
-          <input type="radio" value="tiller" checked={this.state.tiller}></input>
-          <label for="tiller">Tiller Profession</label>
+          <input type="radio" value="tiller" checked={this.state.tiller}></input>Tiller Profession
         </div>
         <div id="artisan" onClick={this.handleRadio}>
-          <input type="radio" value="artisan" checked={this.state.artisan}></input>
-          <label for="artisan">Artisan Profession</label>
+          <input type="radio" value="artisan" checked={this.state.artisan}></input>Artisan Profession
         </div>
         {this.state.crops ?
           <table>
@@ -113,6 +142,7 @@ class Crops extends Component {
                 <th onClick={this.sortBy} id="yields">Yield</th>
                 <th onClick={this.sortBy} id="seedCost">Seed Cost</th>
                 <th onClick={this.sortBy} id="sellPrice">Base Sell</th>
+                <th onClick={this.sortBy} id="artisanGood">Artisan</th>
               </tr>
             </thead>
             <tbody>
@@ -126,6 +156,12 @@ class Crops extends Component {
                     <td>{c.yields}</td>
                     <td>{c.seedCost}</td>
                     <td>{c.sellPrice}</td>
+                    <td>
+                      {c.best ?
+                      <span><img className="table-icon" alt={c.best} src={`/icons/${c.best}.png`}/>{calculateSell(c)}</span>
+                      :
+                      <span></span>}
+                    </td>
                   </tr>
                 )
               })}

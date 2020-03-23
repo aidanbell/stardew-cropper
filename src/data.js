@@ -9,7 +9,8 @@ let data = [{
     "yields": 1,
     "maxHarvests": 4,
     "sellPrice": 550,
-    "seedCost": 0
+    "seedCost": 0,
+    "best": "Wine"
   },
   {
     "crop": "Corn",
@@ -35,7 +36,8 @@ let data = [{
     "yields": 4,
     "maxHarvests": 23,
     "sellPrice": 15,
-    "seedCost": 0
+    "seedCost": 0,
+    "best": "Coffee"
   },
   {
     "crop": "Rice",
@@ -46,7 +48,7 @@ let data = [{
     "maxHarvests": 4,
     "sellPrice": 30,
     "seedCost": 0,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Parsnip",
@@ -59,7 +61,7 @@ let data = [{
     "maxHarvests": 6,
     "sellPrice": 35,
     "seedCost": 20,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Garlic",
@@ -72,7 +74,7 @@ let data = [{
     "maxHarvests": 6,
     "sellPrice": 60,
     "seedCost": 40,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Potato",
@@ -85,7 +87,7 @@ let data = [{
     "maxHarvests": 4,
     "sellPrice": 80,
     "seedCost": 50,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Tulip",
@@ -110,7 +112,7 @@ let data = [{
     "maxHarvests": 4,
     "sellPrice": 110,
     "seedCost": 70,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Blue Jazz",
@@ -136,7 +138,7 @@ let data = [{
     "maxHarvests": 5,
     "sellPrice": 120,
     "seedCost": 100,
-    "best": "Keg"
+    "best": "Wine"
   },
   {
     "crop": "Green Bean",
@@ -150,7 +152,7 @@ let data = [{
     "maxHarvests": 6,
     "sellPrice": 40,
     "seedCost": 60,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Cauliflower",
@@ -163,7 +165,7 @@ let data = [{
     "maxHarvests": 2,
     "sellPrice": 175,
     "seedCost": 80,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Rhubarb",
@@ -176,7 +178,7 @@ let data = [{
     "maxHarvests": 2,
     "sellPrice": 220,
     "seedCost": 100,
-    "best": "Keg"
+    "best": "Wine"
   },
   {
     "crop": "Wheat",
@@ -189,7 +191,7 @@ let data = [{
     "maxHarvests": 6,
     "sellPrice": 25,
     "seedCost": 10,
-    "best": "Keg"
+    "best": "Beer"
   },
   {
     "crop": "Hot Pepper",
@@ -203,7 +205,7 @@ let data = [{
     "maxHarvests": 8,
     "sellPrice": 40,
     "seedCost": 40,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Radish",
@@ -216,7 +218,7 @@ let data = [{
     "maxHarvests": 4,
     "sellPrice": 90,
     "seedCost": 40,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Poppy",
@@ -253,7 +255,7 @@ let data = [{
     "maxHarvests": 3,
     "sellPrice": 260,
     "seedCost": 100,
-    "best": "Keg"
+    "best": "Juice"
   },
   {
     "crop": "Hops",
@@ -267,7 +269,7 @@ let data = [{
     "maxHarvests": 17,
     "sellPrice": 25,
     "seedCost": 60,
-    "best": "Keg"
+    "best": "Pale_Ale"
   },
   {
     "crop": "Tomato",
@@ -281,7 +283,7 @@ let data = [{
     "maxHarvests": 5,
     "sellPrice": 60,
     "seedCost": 50,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Melon",
@@ -294,7 +296,7 @@ let data = [{
     "maxHarvests": 2,
     "sellPrice": 250,
     "seedCost": 80,
-    "best": "Keg"
+    "best": "Wine"
   },
   {
     "crop": "Blueberry",
@@ -308,7 +310,7 @@ let data = [{
     "maxHarvests": 4,
     "sellPrice": 50,
     "seedCost": 80,
-    "best": "Keg"
+    "best": "Wine"
   },
   {
     "crop": "Starfruit",
@@ -321,7 +323,7 @@ let data = [{
     "maxHarvests": 2,
     "sellPrice": 750,
     "seedCost": 400,
-    "best": "Keg"
+    "best": "Wine"
   },
   {
     "crop": "Bok Choy",
@@ -334,7 +336,7 @@ let data = [{
     "maxHarvests": 6,
     "sellPrice": 80,
     "seedCost": 50,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Eggplant",
@@ -348,7 +350,7 @@ let data = [{
     "maxHarvests": 5,
     "sellPrice": 60,
     "seedCost": 20,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Beet",
@@ -361,7 +363,7 @@ let data = [{
     "maxHarvests": 4,
     "sellPrice": 100,
     "seedCost": 20,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Cranberry",
@@ -375,7 +377,7 @@ let data = [{
     "maxHarvests": 5,
     "sellPrice": 75,
     "seedCost": 240,
-    "best": "Keg"
+    "best": "Wine"
   },
   {
     "crop": "Amaranth",
@@ -388,7 +390,7 @@ let data = [{
     "maxHarvests": 3,
     "sellPrice": 150,
     "seedCost": 70,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Sunflower",
@@ -413,7 +415,7 @@ let data = [{
     "maxHarvests": 3,
     "sellPrice": 160,
     "seedCost": 30,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Yam",
@@ -426,7 +428,7 @@ let data = [{
     "maxHarvests": 2,
     "sellPrice": 160,
     "seedCost": 60,
-    "best": "Jar"
+    "best": "Pickles"
   },
   {
     "crop": "Grape",
@@ -440,7 +442,7 @@ let data = [{
     "maxHarvests": 6,
     "sellPrice": 80,
     "seedCost": 60,
-    "best": "Keg"
+    "best": "Wine"
   },
   {
     "crop": "Fairy Rose",
@@ -452,8 +454,7 @@ let data = [{
     "yields": 1,
     "maxHarvests": 2,
     "sellPrice": 290,
-    "seedCost": 200,
-    "best": "Keg"
+    "seedCost": 200
   },
   {
     "crop": "Pumpkin",
@@ -466,7 +467,7 @@ let data = [{
     "maxHarvests": 2,
     "sellPrice": 320,
     "seedCost": 100,
-    "best": "Keg"
+    "best": "Juice"
   },
   {
     "crop": "Sweet Gem Berry",
@@ -478,7 +479,6 @@ let data = [{
     "maxHarvests": 1,
     "sellPrice": 3000,
     "seedCost": 1000,
-    "best": "Keg"
   }
 ]
 
